@@ -5,7 +5,9 @@ html {
   font-family: 'JetBrains Mono', monospace;
   color:#fff;
 }
-   
+
+//HOME
+
 @media(min-width:768px)
 {
     #home 
@@ -28,7 +30,12 @@ html {
             nav 
             {
                 width:100vw;
-        
+                
+                h2
+                {
+                    display:none;
+                }
+                
                 &>ul
                 {
                     border-bottom:1px solid $neonBlue;
@@ -55,6 +62,11 @@ html {
                 display:grid;
                 grid-template-columns: 1fr 1fr;
                 height:100vh;
+                
+                h2
+                {
+                    display:none;
+                }
             
                 &>section
                 {
@@ -122,138 +134,12 @@ html {
     }
 }
 
-#pricing 
-{
-    background:$gradient-bottom;
-    height:100vh;
-    width:100vw;
-    margin:0;
-    padding:0;
-    
-    
-    &>header
-    {
-        
-        h1  
-        {
-            display:none;
-        }
-        
-    }
-    
-    main 
-    {
-        
-        h2 
-        {
-            text-align:center;
-            font-size:2em;
-            font-weight:900;
-        }
-        
-        section h2 
-        {
-            display:none;
-        }  
-        
-        &>section 
-        {
-            display:grid;
-            grid-template-columns:repeat(3, 1fr);
-            padding: 5vh 10vw 5vh 10vw;
-            
-          
-            article 
-            {
-                background-color:#fff;
-                color:#000;
-                display:grid;
-                grid-template-row: 1fr 0.2fr;
-                
-                p 
-                {
-                    font-size: 0.8em;
-                }
-                
-                header
-                {
-                    color:#fff;
-                    text-align:center;
-                    text-transform:uppercase;
-                    height:50px;
-                }
-                
-                section 
-                {
-                    padding:10px;
-                }
-                
-                footer 
-                {
-                    text-align:center;
-                }
-            }
-            
-            #basic
-            {
-                grid-column: 1/2;
-                margin-top:50px;
-                
-                footer 
-                {
-                    h3
-                    {
-                        color:$blue;
-                    }
-                }
-            }
-            
-            #premium 
-            {
-                grid-column: 2/3;
-                border:1px solid $neonBlue;
-                
-                
-                footer 
-                {
-                    h3
-                    {
-                        color:$blue;
-                    }
-                }
-            }
-            #pro 
-            {
-                grid-column: 3/4;
-                margin-top:50px;
-                
-                footer 
-                {
-                    h3
-                    {
-                        color:$blue;
-                    }
-                }
-                
-            }
-            
-            .blue {
-                background:#5e60ce;
-            }
-            
-            .neonblue {
-                background:#5390d9;
-            }
-        }
-    }
-}
-
 @media(max-width:767px)
 {
     #home 
     {
         background:$gradient-top-left;
-        height:100vh;
+        height:200vh;
         width:100vw;
         margin:0;
         padding:0;
@@ -271,6 +157,11 @@ html {
             {
                 display:none;
                 width:100vw;
+                
+                h2
+                {
+                    display:none;
+                }
         
                 &>ul
                 {
@@ -299,6 +190,11 @@ html {
                 grid-template-row: 1fr 1fr;
                 height:100vh;
                 text-align:center;
+                
+                &>h2
+                {
+                    display:none;
+                }
             
                 &>section
                 {
@@ -356,6 +252,262 @@ html {
                 h2 
                 {
                     color:$palatinate-purple;
+                }
+                
+            }
+        }
+    }
+}
+
+//PRICING
+
+@media(min-width:768px)
+{
+    #pricing 
+    {
+        background:$gradient-bottom;
+        height:100vh;
+        width:100vw;
+        margin:0;
+        padding:0;
+    
+    
+        &>header
+        {
+        
+            h1  
+            {
+                display:none;
+            }
+            
+        }
+    
+        main 
+        {
+        
+            h2 
+            {
+                text-align:center;
+                font-size:2em;
+                font-weight:900;
+            }
+        
+            section h2 
+            {
+                display:none;
+            }      
+        
+            &>section 
+            {
+                display:grid;
+                grid-template-columns:repeat(3, 1fr);
+                padding: 5vh 10vw 5vh 10vw;
+            
+                article 
+                {
+                    background-color:#fff;
+                    color:#000;
+                    display:grid;
+                    grid-template-row: 1fr 0.2fr;
+                
+                    p 
+                    {
+                        font-size: 0.8em;
+                    }
+                
+                    header
+                    {
+                        color:#fff;
+                        text-align:center;
+                        text-transform:uppercase;
+                        height:50px;
+                    }
+                
+                    section 
+                    {
+                        padding:10px;
+                    }
+                
+                    footer 
+                    {
+                        text-align:center;
+                    }
+                }
+            
+                #basic
+                {
+                    grid-column: 1/2;
+                    margin-top:50px;
+                
+                    footer 
+                    {
+                        h3
+                        {
+                            color:$blue;
+                        }
+                    }
+                }
+            
+                #premium 
+                {
+                    grid-column: 2/3;
+                    border:1px solid $neonBlue;
+                
+                
+                    footer 
+                    {
+                        h3
+                        {
+                            color:$blue;
+                        }
+                    }
+                }
+                #pro 
+                {
+                    grid-column: 3/4;
+                    margin-top:50px;
+                
+                    footer 
+                    {
+                        h3
+                        {
+                            color:$blue;
+                        }
+                    }
+                
+                }
+            
+                .blue {
+                    background:#5e60ce;
+                }
+            
+                .neonblue {
+                    background:#5390d9;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:767px)
+{
+        #pricing 
+        {
+        background:$gradient-bottom;
+        height:200vh;
+        width:100vw;
+        margin:0;
+        padding:0;
+    
+    
+        &>header
+        {
+        
+            h1  
+            {
+                display:none;
+            }
+            
+        }
+    
+        main 
+        {
+            display:grid;
+            grid-template-rows: 0.2fr 1fr;
+            
+            h2 
+            {
+                align-self:center;
+                justify-self:center;
+                font-size:3em;
+                font-weight:900;
+            }
+        
+            section h2 
+            {
+                display:none;
+            }      
+        
+            &>section 
+            {
+                padding: 5vh 10vw 5vh 10vw;
+            
+                article 
+                {
+                    background-color:#fff;
+                    color:#000;
+                    display:grid;
+                    grid-template-row: 1fr 0.2fr;
+                    margin: 5vh 0 5vh 0;
+                
+                    p 
+                    {
+                        font-size: 0.8em;
+                    }
+                
+                    header
+                    {
+                        color:#fff;
+                        text-align:center;
+                        text-transform:uppercase;
+                        height:50px;
+                    }
+                
+                    section 
+                    {
+                        padding:10px;
+                    }
+                
+                    footer 
+                    {
+                        text-align:center;
+                    }
+                }
+            
+                #basic
+                {
+                   
+                    footer 
+                    {
+                        h3
+                        {
+                            color:$blue;
+                        }
+                    }
+                }
+            
+                #premium 
+                {
+                    border:1px solid $neonBlue;
+                
+                
+                    footer 
+                    {
+                        h3
+                        {
+                            color:$blue;
+                        }
+                    }
+                }
+                #pro 
+                {
+                   
+                    footer 
+                    {
+                        h3
+                        {
+                            color:$blue;
+                        }
+                    }
+                
+                }
+            
+                .blue {
+                    background:#5e60ce;
+                }
+            
+                .neonblue {
+                    background:#5390d9;
                 }
             }
         }
