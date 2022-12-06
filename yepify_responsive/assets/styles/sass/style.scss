@@ -1,0 +1,363 @@
+@import "vars";
+
+html {  
+  font-size: 16px;  
+  font-family: 'JetBrains Mono', monospace;
+  color:#fff;
+}
+   
+@media(min-width:768px)
+{
+    #home 
+    {
+        background:$gradient-top-left;
+        height:100vh;
+        width:100vw;
+        margin:0;
+        padding:0;
+    
+    
+        &>header
+        {
+        
+            h1  
+            {
+                display:none;
+            }
+            
+            nav 
+            {
+                width:100vw;
+        
+                &>ul
+                {
+                    border-bottom:1px solid $neonBlue;
+                    padding-bottom:15px;
+            
+                    li 
+                    {
+                        font-weight:bold;
+                        margin-left:15vw;
+                        display:inline-block;
+                        align-self:center;
+                        justify-self:center;
+                    }
+                }
+            }
+        }
+    
+    
+        &>main 
+        {
+            
+            &>section 
+            {
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                height:100vh;
+            
+                &>section
+                {
+                    font-size: 1.5em;
+                    margin-left:8vw;
+                    align-self:center;
+                    justify-self:center;
+                }
+            }
+        
+            #playlist 
+            {
+                padding:10px;
+                margin:auto;
+                height:60vh;
+                width:25vw;
+                background-color:rgba(0,0,0, 0.2);
+                font-size:1em;
+                justify-self:start;
+                align-self:center;
+            
+                section
+                {
+                    display:grid;
+                    grid-template-columns: 3fr 1fr;
+                    border-bottom:1px solid $neonBlue;
+                
+                    .purple {
+                        color:$palatinate-purple;
+                    }
+                    .blue {
+                        color:$neonBlue;
+                    }
+                
+                    section {
+                        grid-column: 2/3;
+                        margin:auto;
+                        padding:auto;
+                    }
+                }
+            
+                &>ul 
+                {
+                    list-style:none;
+                
+                    img 
+                    {
+                        height:4vh;
+                        width:2vw;
+                    }
+                
+                    li 
+                    {
+                        padding-left:0;
+                        border-bottom:1px solid $skobeloff;
+                    }
+                }
+            
+                h2 
+                {
+                    color:$palatinate-purple;
+                }
+            }
+        }
+    }
+}
+
+#pricing 
+{
+    background:$gradient-bottom;
+    height:100vh;
+    width:100vw;
+    margin:0;
+    padding:0;
+    
+    
+    &>header
+    {
+        
+        h1  
+        {
+            display:none;
+        }
+        
+    }
+    
+    main 
+    {
+        
+        h2 
+        {
+            text-align:center;
+            font-size:2em;
+            font-weight:900;
+        }
+        
+        section h2 
+        {
+            display:none;
+        }  
+        
+        &>section 
+        {
+            display:grid;
+            grid-template-columns:repeat(3, 1fr);
+            padding: 5vh 10vw 5vh 10vw;
+            
+          
+            article 
+            {
+                background-color:#fff;
+                color:#000;
+                display:grid;
+                grid-template-row: 1fr 0.2fr;
+                
+                p 
+                {
+                    font-size: 0.8em;
+                }
+                
+                header
+                {
+                    color:#fff;
+                    text-align:center;
+                    text-transform:uppercase;
+                    height:50px;
+                }
+                
+                section 
+                {
+                    padding:10px;
+                }
+                
+                footer 
+                {
+                    text-align:center;
+                }
+            }
+            
+            #basic
+            {
+                grid-column: 1/2;
+                margin-top:50px;
+                
+                footer 
+                {
+                    h3
+                    {
+                        color:$blue;
+                    }
+                }
+            }
+            
+            #premium 
+            {
+                grid-column: 2/3;
+                border:1px solid $neonBlue;
+                
+                
+                footer 
+                {
+                    h3
+                    {
+                        color:$blue;
+                    }
+                }
+            }
+            #pro 
+            {
+                grid-column: 3/4;
+                margin-top:50px;
+                
+                footer 
+                {
+                    h3
+                    {
+                        color:$blue;
+                    }
+                }
+                
+            }
+            
+            .blue {
+                background:#5e60ce;
+            }
+            
+            .neonblue {
+                background:#5390d9;
+            }
+        }
+    }
+}
+
+@media(max-width:767px)
+{
+    #home 
+    {
+        background:$gradient-top-left;
+        height:100vh;
+        width:100vw;
+        margin:0;
+        padding:0;
+    
+    
+        &>header
+        {
+        
+            h1  
+            {
+                display:none;
+            }
+            
+            nav 
+            {
+                display:none;
+                width:100vw;
+        
+                &>ul
+                {
+                    border-bottom:1px solid $neonBlue;
+                    padding-bottom:15px;
+            
+                    li 
+                    {
+                        font-weight:bold;
+                        margin-left:15vw;
+                        display:inline-block;
+                        align-self:center;
+                        justify-self:center;
+                    }
+                }
+            }
+        }
+    
+    
+        &>main 
+        {
+            
+            &>section 
+            {
+                display:grid;
+                grid-template-row: 1fr 1fr;
+                height:100vh;
+                text-align:center;
+            
+                &>section
+                {
+                    font-size: 2em;
+                    align-self:start;
+                    justify-self:center;
+                }
+            }
+        
+            #playlist 
+            {
+                padding:10px;
+                height:60vh;
+                width:30vw;
+                background-color:rgba(0,0,0, 0.2);
+                font-size:1em;
+            
+                section
+                {
+                    display:grid;
+                    grid-template-columns: 3fr 1fr;
+                    border-bottom:1px solid $neonBlue;
+                
+                    .purple {
+                        color:$palatinate-purple;
+                    }
+                    .blue {
+                        color:$neonBlue;
+                    }
+                
+                    section {
+                        margin:auto;
+                        padding:auto;
+                    }
+                }
+            
+                &>ul 
+                {
+                    list-style:none;
+                    text-align:left;
+                    
+                    img 
+                    {
+                        height:4vh;
+                        width:2vw;
+                    }
+                
+                    li 
+                    {
+                        padding-left:0;
+                        border-bottom:1px solid $skobeloff;
+                    }
+                }
+            
+                h2 
+                {
+                    color:$palatinate-purple;
+                }
+            }
+        }
+    }
+}

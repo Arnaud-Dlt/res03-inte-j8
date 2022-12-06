@@ -1,0 +1,232 @@
+html {
+  font-size: 16px;
+  font-family: "JetBrains Mono", monospace;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  #home {
+    background: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  #home > header h1 {
+    display: none;
+  }
+  #home > header nav {
+    width: 100vw;
+  }
+  #home > header nav > ul {
+    border-bottom: 1px solid #64dfdf;
+    padding-bottom: 15px;
+  }
+  #home > header nav > ul li {
+    font-weight: bold;
+    margin-left: 15vw;
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+  }
+  #home > main > section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+  }
+  #home > main > section > section {
+    font-size: 1.5em;
+    margin-left: 8vw;
+    align-self: center;
+    justify-self: center;
+  }
+  #home > main #playlist {
+    padding: 10px;
+    margin: auto;
+    height: 60vh;
+    width: 25vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 1em;
+    justify-self: start;
+    align-self: center;
+  }
+  #home > main #playlist section {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-bottom: 1px solid #64dfdf;
+  }
+  #home > main #playlist section .purple {
+    color: #7400b8;
+  }
+  #home > main #playlist section .blue {
+    color: #64dfdf;
+  }
+  #home > main #playlist section section {
+    grid-column: 2/3;
+    margin: auto;
+    padding: auto;
+  }
+  #home > main #playlist > ul {
+    list-style: none;
+  }
+  #home > main #playlist > ul img {
+    height: 4vh;
+    width: 2vw;
+  }
+  #home > main #playlist > ul li {
+    padding-left: 0;
+    border-bottom: 1px solid #006466;
+  }
+  #home > main #playlist h2 {
+    color: #7400b8;
+  }
+}
+#pricing {
+  background: linear-gradient(180deg, #272640, #43006b, #7400b8, #6930c3, #5e60ce, #5390d9);
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+#pricing > header h1 {
+  display: none;
+}
+#pricing main h2 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 900;
+}
+#pricing main section h2 {
+  display: none;
+}
+#pricing main > section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5vh 10vw 5vh 10vw;
+}
+#pricing main > section article {
+  background-color: #fff;
+  color: #000;
+  display: grid;
+  grid-template-row: 1fr 0.2fr;
+}
+#pricing main > section article p {
+  font-size: 0.8em;
+}
+#pricing main > section article header {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  height: 50px;
+}
+#pricing main > section article section {
+  padding: 10px;
+}
+#pricing main > section article footer {
+  text-align: center;
+}
+#pricing main > section #basic {
+  grid-column: 1/2;
+  margin-top: 50px;
+}
+#pricing main > section #basic footer h3 {
+  color: #118ab2;
+}
+#pricing main > section #premium {
+  grid-column: 2/3;
+  border: 1px solid #64dfdf;
+}
+#pricing main > section #premium footer h3 {
+  color: #118ab2;
+}
+#pricing main > section #pro {
+  grid-column: 3/4;
+  margin-top: 50px;
+}
+#pricing main > section #pro footer h3 {
+  color: #118ab2;
+}
+#pricing main > section .blue {
+  background: #5e60ce;
+}
+#pricing main > section .neonblue {
+  background: #5390d9;
+}
+
+@media (max-width: 767px) {
+  #home {
+    background: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  #home > header h1 {
+    display: none;
+  }
+  #home > header nav {
+    display: none;
+    width: 100vw;
+  }
+  #home > header nav > ul {
+    border-bottom: 1px solid #64dfdf;
+    padding-bottom: 15px;
+  }
+  #home > header nav > ul li {
+    font-weight: bold;
+    margin-left: 15vw;
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+  }
+  #home > main > section {
+    display: grid;
+    grid-template-row: 1fr 1fr;
+    height: 100vh;
+    text-align: center;
+  }
+  #home > main > section > section {
+    font-size: 2em;
+    align-self: start;
+    justify-self: center;
+  }
+  #home > main #playlist {
+    padding: 10px;
+    height: 60vh;
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 1em;
+  }
+  #home > main #playlist section {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-bottom: 1px solid #64dfdf;
+  }
+  #home > main #playlist section .purple {
+    color: #7400b8;
+  }
+  #home > main #playlist section .blue {
+    color: #64dfdf;
+  }
+  #home > main #playlist section section {
+    margin: auto;
+    padding: auto;
+  }
+  #home > main #playlist > ul {
+    list-style: none;
+    text-align: left;
+  }
+  #home > main #playlist > ul img {
+    height: 4vh;
+    width: 2vw;
+  }
+  #home > main #playlist > ul li {
+    padding-left: 0;
+    border-bottom: 1px solid #006466;
+  }
+  #home > main #playlist h2 {
+    color: #7400b8;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
